@@ -1,0 +1,32 @@
+{
+    "description": "Post Esc if Caps is tapped, Control if held, Toggle Caps Lock If held down for long.",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "caps_lock",
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_control",
+                    "lazy": true
+                }
+            ],
+            "to_if_alone": [
+                {
+                    "key_code": "escape"
+                }
+            ],
+            "to_if_held_down": [
+                {
+                    "key_code": "caps_lock"
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
