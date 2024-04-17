@@ -1,4 +1,3 @@
 # Global alias
 alias -g ls="exa"
 alias -g vim="nvim"
-alias -g grep="rg"
