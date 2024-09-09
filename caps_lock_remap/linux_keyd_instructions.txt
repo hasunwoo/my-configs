@@ -1,0 +1,11 @@
+1. install keyd with available package manager
+example) sudo pacman -S key
+
+2. enable & start keyd service
+sudo systemctl enable keyd && sudo systemctl start keyd
+
+2. copy linux_keyd.conf to /etc/keyd/default.conf
+sudo cp linux_keyd.conf /etc/keyd/default.conf
+
+3. reload keyd
+sudo keyd reload
