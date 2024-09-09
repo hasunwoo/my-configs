@@ -1,0 +1,8 @@
+#!/bin/bash
+STATE_FILE="$HOME/.config/hypr/scripts/touchpad_state"
+
+if [ "$(cat "$STATE_FILE")" = "0" ]; then
+    echo '{"percentage": 0}'
+else
+    echo '{"percentage": 100}'
+fi
